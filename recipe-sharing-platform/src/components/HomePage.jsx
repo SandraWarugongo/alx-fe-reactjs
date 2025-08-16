@@ -28,6 +28,16 @@ const HomePage = () => {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Add Recipe Button */}
+        <div className="text-center mb-8">
+          <Link 
+            to="/add-recipe"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors duration-200"
+          >
+            + Add New Recipe
+          </Link>
+        </div>
+
         <div className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-2">
             Featured Recipes
