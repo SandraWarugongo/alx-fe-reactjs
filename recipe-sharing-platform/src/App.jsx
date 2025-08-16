@@ -1,10 +1,20 @@
+import React from 'react';
+
 function App() {
   return (
-    <div className="bg-red-500 text-white text-center p-8">
-      <h1 className="text-4xl font-bold">Recipe Sharing Platform</h1>
-      <p className="mt-4 text-yellow-300">Tailwind CSS is working!</p>
+    <div className="min-h-screen bg-gray-50">
+      <div className="container mx-auto px-4 py-8">
+        <header className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-blue-600 mb-2">
+            Recipe Sharing Platform
+          </h1>
+          <p className="text-gray-600 text-lg">
+            Your Tailwind CSS is working! 🎉
+          </p>
+        </header>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
