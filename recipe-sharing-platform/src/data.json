@@ -1,38 +1,175 @@
+
 [
   {
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "400g spaghetti",
+      "200g guanciale or pancetta, diced",
+      "4 large eggs",
+      "100g Pecorino Romano cheese, grated",
+      "2 cloves garlic, minced",
+      "Salt and black pepper to taste",
+      "2 tbsp olive oil"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil and cook spaghetti according to package directions.",
+      "While pasta cooks, heat olive oil in a large skillet over medium heat.",
+      "Add guanciale and cook until crispy, about 5-7 minutes.",
+      "In a bowl, whisk together eggs, cheese, and black pepper.",
+      "Drain pasta, reserving 1 cup pasta water.",
+      "Add hot pasta to the skillet with guanciale.",
+      "Remove from heat and quickly stir in egg mixture, adding pasta water as needed.",
+      "Serve immediately with extra cheese and black pepper."
+    ],
+    "prepTime": "15 minutes",
+    "cookTime": "20 minutes",
+    "servings": 4
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "500g chicken breast, cut into chunks",
+      "200ml plain yogurt",
+      "2 tbsp tikka masala paste",
+      "1 large onion, diced",
+      "3 cloves garlic, minced",
+      "1 tbsp fresh ginger, grated",
+      "400g canned tomatoes",
+      "200ml heavy cream",
+      "2 tbsp vegetable oil",
+      "Salt and cilantro for garnish"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and 1 tbsp tikka paste for 30 minutes.",
+      "Heat oil in a large pan over medium-high heat.",
+      "Cook marinated chicken until golden, about 6-8 minutes. Remove and set aside.",
+      "In the same pan, cook onions until softened, about 5 minutes.",
+      "Add garlic, ginger, and remaining tikka paste. Cook for 1 minute.",
+      "Add canned tomatoes and simmer for 10 minutes.",
+      "Stir in cream and return chicken to pan.",
+      "Simmer for 5 more minutes until chicken is cooked through.",
+      "Garnish with cilantro and serve with rice or naan."
+    ],
+    "prepTime": "45 minutes",
+    "cookTime": "25 minutes",
+    "servings": 4
   },
   {
     "id": 3,
     "title": "Beef Tacos",
     "summary": "Delicious beef tacos with fresh lettuce, tomatoes, cheese, and a spicy sauce.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "500g ground beef",
+      "1 packet taco seasoning",
+      "8 taco shells",
+      "1 cup lettuce, shredded",
+      "2 tomatoes, diced",
+      "1 cup cheddar cheese, grated",
+      "1/2 cup sour cream",
+      "1/4 cup salsa",
+      "1 onion, diced"
+    ],
+    "instructions": [
+      "Cook ground beef in a large skillet over medium heat until browned.",
+      "Add taco seasoning and water according to package directions.",
+      "Simmer for 5-10 minutes until mixture thickens.",
+      "Warm taco shells according to package directions.",
+      "Fill each shell with beef mixture.",
+      "Top with lettuce, tomatoes, cheese, and onions.",
+      "Serve with sour cream and salsa on the side."
+    ],
+    "prepTime": "15 minutes",
+    "cookTime": "15 minutes",
+    "servings": 4
   },
   {
     "id": 4,
     "title": "Caesar Salad",
     "summary": "Fresh romaine lettuce with caesar dressing, croutons, and parmesan cheese.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "2 heads romaine lettuce, chopped",
+      "1/2 cup Caesar dressing",
+      "1/4 cup Parmesan cheese, grated",
+      "1 cup croutons",
+      "2 tbsp lemon juice",
+      "2 anchovy fillets (optional)",
+      "Black pepper to taste"
+    ],
+    "instructions": [
+      "Wash and chop romaine lettuce into bite-sized pieces.",
+      "In a large bowl, toss lettuce with Caesar dressing.",
+      "Add lemon juice and mix well.",
+      "Top with Parmesan cheese and croutons.",
+      "Add anchovy fillets if desired.",
+      "Season with black pepper and serve immediately."
+    ],
+    "prepTime": "10 minutes",
+    "cookTime": "0 minutes",
+    "servings": 4
   },
   {
     "id": 5,
     "title": "Chocolate Cake",
     "summary": "Rich and moist chocolate cake with chocolate frosting and chocolate chips.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "2 cups sugar",
+      "3/4 cup cocoa powder",
+      "2 tsp baking soda",
+      "1 tsp baking powder",
+      "1 tsp salt",
+      "2 eggs",
+      "1 cup buttermilk",
+      "1 cup hot coffee",
+      "1/2 cup vegetable oil"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F (175°C). Grease two 9-inch round pans.",
+      "In a large bowl, mix flour, sugar, cocoa, baking soda, baking powder, and salt.",
+      "In another bowl, beat eggs, buttermilk, coffee, and oil.",
+      "Combine wet and dry ingredients until just mixed.",
+      "Divide batter between prepared pans.",
+      "Bake for 30-35 minutes until toothpick comes out clean.",
+      "Cool completely before frosting."
+    ],
+    "prepTime": "20 minutes",
+    "cookTime": "35 minutes",
+    "servings": 12
   },
   {
     "id": 6,
     "title": "Grilled Salmon",
     "summary": "Fresh salmon grilled to perfection with herbs and lemon butter sauce.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "4 salmon fillets",
+      "2 tbsp olive oil",
+      "2 tbsp butter",
+      "2 lemons, juiced and zested",
+      "2 cloves garlic, minced",
+      "1 tbsp fresh dill",
+      "1 tbsp fresh parsley",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Preheat grill to medium-high heat.",
+      "Brush salmon fillets with olive oil and season with salt and pepper.",
+      "Grill salmon for 4-6 minutes per side until cooked through.",
+      "In a small saucepan, melt butter with garlic, lemon juice, and zest.",
+      "Stir in fresh herbs.",
+      "Serve salmon topped with lemon butter sauce."
+    ],
+    "prepTime": "10 minutes",
+    "cookTime": "12 minutes",
+    "servings": 4
   }
 ]
