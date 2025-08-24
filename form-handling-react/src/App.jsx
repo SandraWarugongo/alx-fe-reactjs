@@ -1,53 +1,66 @@
 import React, { useState } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import './App.css';
-import RegistrationForm from './components/RegistrationForm';
-import FormikForm from './components/formikForm.jsx';
+import PostsComponent from './components/PostsComponent';
+import Navigation from './components/Navigation';
+
+// Create a client for React Query
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      // Data stays fresh for 5 minutes
+      staleTime: 5 * 60 * 1000,
+      // Cache data for 10 minutes
+      cacheTime: 10 * 60 * 1000,
+    },
+  },
+});
 
 function App() {
-  const [currentForm, setCurrentForm] = useState('controlled');
+  const [currentView, setCurrentView] = useState('posts');
+
+  const renderView = () => {
+    switch(currentView) {
+      case 'posts':
+        return <PostsComponent />;
+      case 'about':
+        return (
+          <div style={{ padding: '20px', textAlign: 'center' }}>
+            <h2>About Page</h2>
+            <p>This is a demo of React Query caching behavior.</p>
+            <p>Navigate back to Posts to see cached data load instantly!</p>
+          </div>
+        );
+      case 'home':
+        return (
+          <div style={{ padding: '20px', textAlign: 'center' }}>
+            <h2>Home Page</h2>
+            <p>Welcome to React Query Demo!</p>
+            <p>Check the Network tab in DevTools when navigating.</p>
+          </div>
+        );
+      default:
+        return <PostsComponent />;
+    }
+  };
 
   return (
-    <div className="App">
-      <div style={{ textAlign: 'center', padding: '20px' }}>
-        <h1>React Form Handling Demo</h1>
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <h1>React Query Demo - Testing Caching</h1>
         
-        {/* Form switcher buttons */}
-        <div style={{ marginBottom: '30px' }}>
-          <button
-            onClick={() => setCurrentForm('controlled')}
-            style={{
-              backgroundColor: currentForm === 'controlled' ? '#007bff' : '#6c757d',
-              color: 'white',
-              padding: '10px 20px',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              marginRight: '10px'
-            }}
-          >
-            Controlled Components
-          </button>
-          
-          <button
-            onClick={() => setCurrentForm('formik')}
-            style={{
-              backgroundColor: currentForm === 'formik' ? '#007bff' : '#6c757d',
-              color: 'white',
-              padding: '10px 20px',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer'
-            }}
-          >
-            Formik Form
-          </button>
-        </div>
-
-        {/* Render the selected form */}
-        {currentForm === 'controlled' && <RegistrationForm />}
-        {currentForm === 'formik' && <FormikForm />}
+        <Navigation 
+          currentView={currentView} 
+          setCurrentView={setCurrentView} 
+        />
+        
+        {renderView()}
       </div>
-    </div>
+      
+      {/* DevTools - only shows in development */}
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   );
 }
 
