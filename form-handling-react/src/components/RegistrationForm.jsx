@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const RegistrationForm = () => {
+  // Controlled components state management
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -9,10 +10,11 @@ const RegistrationForm = () => {
 
   const [errors, setErrors] = useState({});
 
+  // Controlled components - handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
+    setFormData(prevState => ({
+      ...prevState,
       [name]: value
     }));
   };
